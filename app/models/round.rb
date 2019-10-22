@@ -23,5 +23,6 @@ class Round < ApplicationRecord
                 round.update(is_open: false)
             end
         end
+
     end
 end
