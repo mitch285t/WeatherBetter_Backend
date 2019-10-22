@@ -1,4 +1,9 @@
 tmp/
+<<<<<<< HEAD
 tmp/cache/bootsnap-compile-cache/aa/b43a3095f97997
 tmp/cache/bootsnap-compile-cache/ca/fed41f8e26be74
 tmp/cache/bootsnap-load-path-cache
+=======
+# Ignore application configuration
+/config/application.yml
+>>>>>>> 28b868a762221d226e010ba7811449430e3e69da
