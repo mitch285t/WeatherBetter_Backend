@@ -451,6 +451,2047 @@ Migrating to AddLocTimeIndexToRounds (20191021185817)
   [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mitch@mitch.com"], ["LIMIT", 1]]
   [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "mitch285t"], ["email", "mitch@mitch.com"], ["created_at", "2019-10-21 18:59:55.995113"], ["updated_at", "2019-10-21 18:59:55.995113"]]
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+<<<<<<< HEAD
+Started GET "/" for ::1 at 2019-10-21 14:34:55 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "WeatherBetter_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-21 14:35:36 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "WeatherBetter_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-21 14:36:02 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "WeatherBetter_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-10-21 14:36:09 -0500
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "WeatherBetter_development" does not exist
+):
+  
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:50:in `rescue in postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:33:in `postgresql_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
+activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
+activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
+activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (536.7ms)[0m  [1m[35mCREATE DATABASE "WeatherBetter_development" ENCODING = 'unicode'[0m
+  [1m[35m (444.1ms)[0m  [1m[35mCREATE DATABASE "WeatherBetter_test" ENCODING = 'unicode'[0m
+  [1m[35m (35.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(877079329772968980)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateLocations (20191018175358)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (12.3ms)[0m  [1m[35mCREATE TABLE "locations" ("id" bigserial primary key, "name" character varying, "latitude" float, "longitude" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191018175358"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateRounds (20191018175623)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "rounds" ("id" bigserial primary key, "location_id" integer, "is_open" boolean, "finish_time" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191018175623"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateBets (20191018180106)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (9.1ms)[0m  [1m[35mCREATE TABLE "bets" ("id" bigserial primary key, "user_id" integer, "payout" float, "weather_type" character varying, "round_id" integer, "bet_amount" float, "is_called" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (2.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191018180106"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateUsers (20191018180203)
+  [1m[35m (1.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191018180203"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddUrLsToLocations (20191018184542)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.7ms)[0m  [1m[35mALTER TABLE "locations" ADD "current_weather_url" character varying[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "locations" ADD "forecast_url" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191018184542"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddLocTimeIndexToRounds (20191021185817)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_rounds_on_location_id_and_finish_time" ON "rounds"  ("location_id", "finish_time")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20191021185817"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-21 19:38:49.056768"], ["updated_at", "2019-10-21 19:38:49.056768"]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(877079329772968980)[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLocation Create (2.0ms)[0m  [1m[32mINSERT INTO "locations" ("name", "latitude", "longitude", "created_at", "updated_at", "current_weather_url", "forecast_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Austin"], ["latitude", 30.2711], ["longitude", -97.7403], ["created_at", "2019-10-21 19:38:55.616613"], ["updated_at", "2019-10-21 19:38:55.616613"], ["current_weather_url", "https://api.weather.gov/stations/kaus/observations/latest"], ["forecast_url", "https://api.weather.gov/gridpoints/EWX/155,90/forecast"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLocation Create (0.3ms)[0m  [1m[32mINSERT INTO "locations" ("name", "latitude", "longitude", "created_at", "updated_at", "current_weather_url", "forecast_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Shreveport"], ["latitude", 32.3519], ["longitude", -93.6929], ["created_at", "2019-10-21 19:38:55.622358"], ["updated_at", "2019-10-21 19:38:55.622358"], ["current_weather_url", "https://api.weather.gov/stations/kshv/observations/latest"], ["forecast_url", "https://api.weather.gov/gridpoints/SHV/78,61/forecast"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLocation Create (0.3ms)[0m  [1m[32mINSERT INTO "locations" ("name", "latitude", "longitude", "created_at", "updated_at", "current_weather_url", "forecast_url") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["name", "Chicago"], ["latitude", 41.9571], ["longitude", -87.6551], ["created_at", "2019-10-21 19:38:55.625753"], ["updated_at", "2019-10-21 19:38:55.625753"], ["current_weather_url", "https://api.weather.gov/stations/kord/observations/latest"], ["forecast_url", "https://api.weather.gov/gridpoints/LOT/73,76/forecast"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ananari"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ana@ana.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "ananari"], ["email", "ana@ana.com"], ["created_at", "2019-10-21 19:38:55.641809"], ["updated_at", "2019-10-21 19:38:55.641809"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "mitch285t"], ["LIMIT", 1]]
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "mitch@mitch.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "mitch285t"], ["email", "mitch@mitch.com"], ["created_at", "2019-10-21 19:38:55.646970"], ["updated_at", "2019-10-21 19:38:55.646970"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2019-10-21 14:39:21 -0500
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mitchellwilliams/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mitchellwilliams/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 19.8ms | Allocations: 316)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 1602)
+
+
+Started GET "/users" for ::1 at 2019-10-21 14:39:25 -0500
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 5.8ms | ActiveRecord: 6.0ms | Allocations: 7169)
+
+
+Started GET "/weather" for ::1 at 2019-10-21 14:39:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/weather"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/Location" for ::1 at 2019-10-21 14:39:42 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/Location"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/Locations" for ::1 at 2019-10-21 14:39:48 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/Locations"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/Location" for ::1 at 2019-10-21 14:39:51 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/Location"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/locations" for ::1 at 2019-10-21 14:39:54 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 8.3ms | ActiveRecord: 5.6ms | Allocations: 7152)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 15:51:59 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.2ms | Allocations: 1403)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 15:57:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 15:58:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 4.3ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 15:59:22 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 4.8ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 15:59:40 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 3.0ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:00:13 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.7ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:00:25 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.4ms | Allocations: 1317)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:01:15 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:01:21 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:04:10 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:04:47 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.5ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:06:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:09:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 2.9ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:10:07 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.6ms | Allocations: 1304)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:11:42 -0500
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 20ms (Views: 7.2ms | ActiveRecord: 7.1ms | Allocations: 7853)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:29:15 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.6ms | ActiveRecord: 3.5ms | Allocations: 1405)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:30:48 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1321)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:30:55 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.5ms | Allocations: 1321)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:31:09 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:31:31 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:31:48 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (18.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 21ms (Views: 1.8ms | ActiveRecord: 18.8ms | Allocations: 1321)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:31:53 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:32:02 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:32:32 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:32:42 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:33:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (16.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 2.1ms | ActiveRecord: 16.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:34:46 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:35:44 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:41:34 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:41:39 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:47:38 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 0.6ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:47:46 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:48:45 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:48:48 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:49:26 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.4ms | ActiveRecord: 4.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:49:59 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:50:02 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:50:18 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:50:36 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:51:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:54:17 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:54:21 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:54:33 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 34ms (Views: 33.6ms | ActiveRecord: 0.6ms | Allocations: 1315)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:54:46 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (9.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 1.7ms | ActiveRecord: 9.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:56:44 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (25.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 1.8ms | ActiveRecord: 25.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:57:03 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (56.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 59ms (Views: 2.0ms | ActiveRecord: 56.5ms | Allocations: 1306)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 16:57:26 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (26.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 2.3ms | ActiveRecord: 26.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 17:03:11 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.7ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-21 17:04:00 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 09:00:42 -0500
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 38ms (Views: 10.0ms | ActiveRecord: 15.5ms | Allocations: 7853)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 09:05:16 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.0ms | ActiveRecord: 1.5ms | Allocations: 1322)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 09:09:54 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.6ms | Allocations: 1321)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 09:32:18 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.3ms | Allocations: 1404)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 09:34:31 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1321)
+
+
+Started GET "/" for ::1 at 2019-10-22 10:40:39 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/mitchellwilliams/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/mitchellwilliams/.rvm/gems/ruby-2.6.1/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 21.7ms | Allocations: 316)
+Completed 200 OK in 43ms (Views: 34.1ms | ActiveRecord: 0.0ms | Allocations: 1597)
+
+
+Started GET "/weather" for ::1 at 2019-10-22 10:40:46 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/weather"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/weather/1" for ::1 at 2019-10-22 10:40:49 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/weather/1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/1/weather" for ::1 at 2019-10-22 10:41:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/1/weather"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/locations/1" for ::1 at 2019-10-22 10:41:50 -0500
+Processing by LocationsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (2.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:12:in `show'
+Completed 200 OK in 59ms (Views: 1.3ms | ActiveRecord: 3.0ms | Allocations: 2937)
+
+
+Started GET "/locations/1/weather" for ::1 at 2019-10-22 10:41:54 -0500
+Processing by LocationsController#weather as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:17:in `weather'
+Completed 200 OK in 184ms (Views: 0.9ms | ActiveRecord: 0.5ms | Allocations: 3319)
+
+
+Started GET "/location" for ::1 at 2019-10-22 10:42:53 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/location"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.0.3) lib/rack/cors.rb:95:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/locations/1/forecast" for ::1 at 2019-10-22 10:43:12 -0500
+Processing by LocationsController#forecast as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:24:in `forecast'
+Completed 200 OK in 130ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 4628)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 10:59:06 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.2ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:01:54 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (5.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.0ms | ActiveRecord: 5.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:02:39 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:26:04 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.7ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:26:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:28:05 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.4ms | Allocations: 1316)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:50:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.7ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:51:12 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:51:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:51:40 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:53:15 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 2.2ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:53:32 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:56:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:57:00 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:57:57 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (13.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 13.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:58:10 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 3.0ms | ActiveRecord: 3.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:58:16 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 3.3ms | ActiveRecord: 3.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:58:59 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (45.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 1.9ms | ActiveRecord: 45.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:59:06 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:59:11 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.3ms | ActiveRecord: 2.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:59:16 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:59:25 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (5.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 1.6ms | ActiveRecord: 5.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:59:41 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 11:59:44 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (23.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 2.1ms | ActiveRecord: 23.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:01:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:01:24 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:01:26 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (38.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 42ms (Views: 2.3ms | ActiveRecord: 38.9ms | Allocations: 1306)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:01:33 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.9ms | ActiveRecord: 3.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:03:16 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (24.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 29ms (Views: 4.8ms | ActiveRecord: 24.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:04:37 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:05:03 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:07:27 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:08:05 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 22ms (Views: 21.9ms | ActiveRecord: 0.3ms | Allocations: 1308)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:08:37 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:39:34 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 19ms (Views: 11.9ms | ActiveRecord: 4.3ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:40:02 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:40:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:40:53 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.2ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:44:41 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1306)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:45:05 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:45:20 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:45:40 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (8.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 8.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:46:00 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 1.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:50:13 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:50:50 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:50:59 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:51:44 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:55:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:55:31 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:56:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:56:08 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.1ms | ActiveRecord: 3.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:56:24 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:57:22 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:57:27 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:58:09 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (6.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 4.9ms | ActiveRecord: 6.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:58:19 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:58:25 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 1.2ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:58:58 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.3ms | ActiveRecord: 3.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 12:59:27 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:00:06 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (122.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 126ms (Views: 3.0ms | ActiveRecord: 122.8ms | Allocations: 1306)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:00:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 1.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:02:27 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:02:30 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:02:39 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:03:24 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:04:29 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (6.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 1.5ms | ActiveRecord: 6.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:04:40 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:04:59 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:05:13 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 4.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:05:37 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 1.5ms | ActiveRecord: 4.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:05:43 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:05:59 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:06:02 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:08:58 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (13.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 13.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:11:43 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 1.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:12:45 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:12:54 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 1.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:15:32 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:17:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:17:17 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:17:30 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:18:05 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:18:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:24:11 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.7ms | ActiveRecord: 2.4ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:25:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:30:50 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 1308)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:37:40 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.8ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:38:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.7ms | ActiveRecord: 1.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:38:42 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:40:11 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:40:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:43:36 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:47:17 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 16ms (Views: 10.9ms | ActiveRecord: 1.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:47:30 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:48:09 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:52:25 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (33.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 2.9ms | ActiveRecord: 33.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:54:43 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:54:48 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (10.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 1.9ms | ActiveRecord: 10.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:56:19 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:56:25 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:56:33 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 13:56:40 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:03:52 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.2ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:08:09 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:08:38 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:08:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:09:41 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:10:18 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:10:29 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:10:45 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:11:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 4.2ms | Allocations: 1316)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:11:46 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:12:05 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:13:03 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 1.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:13:07 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:13:52 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 1.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:27:32 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.6ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:34:35 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (84.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 97ms (Views: 11.0ms | ActiveRecord: 84.3ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:34:50 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:35:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:35:20 -0500
+Processing by LocationsController#index as HTML
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.4ms | Allocations: 1303)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:35:27 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:36:25 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:36:37 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 14:36:42 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (4.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.3ms | ActiveRecord: 4.2ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:01:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 1.3ms | Allocations: 1392)
+
+
+Started GET "/locations/1/forecast" for ::1 at 2019-10-22 15:01:53 -0500
+Processing by LocationsController#forecast as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLocation Load (1.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations" WHERE "locations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/locations_controller.rb:24:in `forecast'
+Completed 200 OK in 126ms (Views: 2.5ms | ActiveRecord: 1.6ms | Allocations: 4668)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:03:45 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 2.1ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:03:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.5ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.5ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:04:36 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.8ms | Allocations: 1306)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:04:48 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:05:07 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 25.9ms | ActiveRecord: 0.3ms | Allocations: 1324)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:06:17 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 1.9ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:07:36 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:08:02 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:08:18 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:09:09 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:09:29 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.2ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 1.2ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:09:39 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:10:27 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:10:31 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (3.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 1.4ms | ActiveRecord: 3.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:10:57 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:11:23 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:11:46 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:13:37 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.7ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.7ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:14:19 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:16:21 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.4ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:17:19 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:18:58 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:19:01 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (5.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 5.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:19:18 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (7.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 1.5ms | ActiveRecord: 7.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:59:35 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.4ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 10.3ms | ActiveRecord: 1.4ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 15:59:49 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 2.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:04:24 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (51.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 67ms (Views: 11.8ms | ActiveRecord: 51.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:04:50 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 1.6ms | Allocations: 1308)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:05:15 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (2.8ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 2.8ms | ActiveRecord: 2.8ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:05:41 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:07:20 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 1.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:32:17 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (26.9ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 40ms (Views: 10.9ms | ActiveRecord: 26.9ms | Allocations: 1392)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:33:07 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (21.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 27ms (Views: 5.0ms | ActiveRecord: 21.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:33:21 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (10.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 4.1ms | ActiveRecord: 10.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:33:29 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (0.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.6ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:33:56 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (11.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 4.1ms | ActiveRecord: 11.0ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:34:14 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (164.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 167ms (Views: 2.8ms | ActiveRecord: 164.3ms | Allocations: 1305)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:34:24 -0500
+Processing by LocationsController#index as */*
+  [1m[36mLocation Load (1.0ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 1.0ms | Allocations: 1305)
+=======
 Started GET "/" for ::1 at 2019-10-21 14:39:44 -0500
   [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -8119,6 +10160,7 @@ Processing by LocationsController#index as */*
   [1m[36mLocation Load (80.3ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
   ↳ app/controllers/locations_controller.rb:8:in `index'
 Completed 200 OK in 143ms (Views: 17.9ms | ActiveRecord: 82.2ms | Allocations: 2051)
+>>>>>>> 10af8e28f72e1ea74ca806acbe199f8e519c95f8
 
 
 Started GET "/locations" for ::1 at 2019-10-22 16:41:55 -0500
