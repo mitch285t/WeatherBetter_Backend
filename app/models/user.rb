@@ -2,11 +2,12 @@ class User < ApplicationRecord
     has_many :bets
     has_many :rounds, through: :bets
     validates :username, presence: true
-    validates :username, uniqueness: true
+    validates :username, uniqueness: { case_sensitive: false }
     validates :email, presence: true
     validates :email, uniqueness: true
     validate :no_special_characters
     validate :email_must_be_valid
+    has_secure_password
     def no_special_characters
         if /\W/.match(username)
             errors.add(:username, "must only contain the letters A-Z, the numbers 0-9, and the underscore")
