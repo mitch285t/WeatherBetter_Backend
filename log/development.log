@@ -8121,3 +8121,42 @@ Processing by LocationsController#index as */*
 Completed 200 OK in 143ms (Views: 17.9ms | ActiveRecord: 82.2ms | Allocations: 2051)
 
 
+Started GET "/locations" for ::1 at 2019-10-22 16:41:55 -0500
+  [1m[35m (22.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LocationsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 195)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:49:24 -0500
+Processing by LocationsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 127)
+
+
+Started POST "/login" for ::1 at 2019-10-22 16:49:45 -0500
+Processing by AuthController#create as JSON
+  Parameters: {"username"=>"ana", "password"=>"[FILTERED]", "auth"=>{"username"=>"ana", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "ana"], ["LIMIT", 1]]
+  ↳ app/controllers/auth_controller.rb:4:in `create'
+Completed 202 Accepted in 346ms (Views: 1.2ms | ActiveRecord: 38.9ms | Allocations: 7736)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:49:50 -0500
+Processing by LocationsController#index as */*
+  [1m[36mUser Load (10.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+  [1m[36mLocation Load (5.1ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 43ms (Views: 10.5ms | ActiveRecord: 24.4ms | Allocations: 7853)
+
+
+Started GET "/locations" for ::1 at 2019-10-22 16:50:46 -0500
+Processing by LocationsController#index as */*
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:25:in `current_user'
+  [1m[36mLocation Load (2.6ms)[0m  [1m[34mSELECT "locations".* FROM "locations"[0m
+  ↳ app/controllers/locations_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 3.5ms | ActiveRecord: 4.5ms | Allocations: 2052)
+
+
