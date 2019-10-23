@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2019_10_23_192200) do
     t.string "email"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.float "wallet"
   end
 
 end
