@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_23_160512) do
+ActiveRecord::Schema.define(version: 2019_10_23_192200) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,17 +32,18 @@ ActiveRecord::Schema.define(version: 2019_10_23_160512) do
     t.float "longitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.string "current_weather_url"
     t.string "forecast_url"
   end
 
   create_table "rounds", force: :cascade do |t|
     t.integer "location_id"
     t.boolean "is_open"
-    t.datetime "finish_time"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["location_id", "finish_time"], name: "index_rounds_on_location_id_and_finish_time", unique: true
+    t.integer "temperature"
+    t.string "forecast"
+    t.float "precip_probability"
+    t.integer "time"
   end
 
   create_table "users", force: :cascade do |t|
