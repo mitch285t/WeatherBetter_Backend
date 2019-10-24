@@ -24,9 +24,22 @@ class UsersController < ApplicationController
       end
     end
 
+    def update
+      user = User.find(params[:id])
+      if user.update(user_edit_params)
+        render json: {user: user}
+      else
+        render json: {error: "failed to update user"}, status: :not_acceptable
+      end
+    end
+
     private
 
     def user_params
         params.permit(:username, :email, :password, :password_confirmation, :wallet)
+    end
+
+    def user_edit_params
+      params.require(:user).permit(:username, :email)
     end
 end
