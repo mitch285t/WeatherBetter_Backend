@@ -3,7 +3,7 @@ class RoundsController < ApplicationController
     def index
         # locations = Location.all
         # locations.each do |loc|
-        #     Round.manage_rounds(loc)
+        #   Round.manage_rounds(loc)
         # end
         Round.close_open_rounds
         rounds = Round.all
