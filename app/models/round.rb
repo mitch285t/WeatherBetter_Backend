@@ -23,11 +23,15 @@ class Round < ApplicationRecord
         end
     end
     def self.close_open_rounds
-        self.all.each do |round|
-            if Time.now.strftime("%s").to_i > round.time
-                round.update(is_open: false)
+      self.all.each do |round|
+        if Time.now.strftime("%s").to_i > round.time
+          round.update(is_open: false)
+          if round.bets.length > 0
+            round.bets.each do |bet|
+              bet.update(is_called: true)
             end
+          end
         end
-
+      end
     end
 end
