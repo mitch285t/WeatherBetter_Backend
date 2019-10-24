@@ -27,7 +27,6 @@ class Bet < ApplicationRecord
         forecast_data = forecast_data_full["hourly"]["data"].find do |hour|
           bet.round.time.to_s == hour["time"].to_s
         end
-        byebug
         attrs = {
           "temperature" => bet.temperature,
           "precipProbability" => bet.precip_probability
