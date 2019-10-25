@@ -20,7 +20,7 @@ class UsersController < ApplicationController
         @token = encode_token(user_id: @user.id)
         render json: { user: @user, jwt: @token }, status: :created
       else
-        render json: { error: 'failed to create user' }, status: :not_acceptable
+        render json: { error: "failed to create user" }, status: :not_acceptable
       end
     end
 
@@ -40,6 +40,6 @@ class UsersController < ApplicationController
     end
 
     def user_edit_params
-      params.require(:user).permit(:username, :email)
+      params.require(:user).permit(:username, :email, :wallet)
     end
 end
